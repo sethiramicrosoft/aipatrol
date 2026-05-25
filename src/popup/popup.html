@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GuardPrompt</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 280px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #FBF6EE;
+      color: #1A1A1A;
+    }
+    .header {
+      background: #8B1E00;
+      color: white;
+      padding: 14px 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .header h1 { font-size: 16px; font-weight: 700; }
+    .header .badge {
+      margin-left: auto;
+      background: rgba(255,255,255,0.2);
+      font-size: 10px;
+      padding: 2px 6px;
+      border-radius: 10px;
+    }
+    .status {
+      padding: 14px 16px;
+      border-bottom: 1px solid #e8ddd0;
+    }
+    .status-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+    }
+    .dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: #22c55e;
+    }
+    .stats {
+      padding: 12px 16px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+    .stat-box {
+      background: white;
+      border: 1px solid #e8ddd0;
+      border-radius: 6px;
+      padding: 10px;
+      text-align: center;
+    }
+    .stat-box .num { font-size: 22px; font-weight: 700; color: #8B1E00; }
+    .stat-box .lbl { font-size: 10px; color: #666; margin-top: 2px; }
+    .legend {
+      padding: 12px 16px;
+      border-top: 1px solid #e8ddd0;
+    }
+    .legend-title {
+      font-size: 11px;
+      font-weight: 600;
+      color: #555;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .legend-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 6px;
+      font-size: 11px;
+    }
+    .sev-badge {
+      font-size: 10px;
+      font-weight: 700;
+      padding: 1px 6px;
+      border-radius: 3px;
+      white-space: nowrap;
+      min-width: 52px;
+      text-align: center;
+    }
+    .sev-critical { background: #fee2e2; color: #991b1b; }
+    .sev-high     { background: #ffedd5; color: #9a3412; }
+    .sev-medium   { background: #fef9c3; color: #854d0e; }
+    .sev-low      { background: #f0fdf4; color: #166534; }
+    .legend-desc  { color: #555; line-height: 1.4; }
+    .footer {
+      padding: 10px 16px;
+      font-size: 11px;
+      color: #888;
+      text-align: center;
+      border-top: 1px solid #e8ddd0;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <span>🛡️</span>
+    <h1>GuardPrompt</h1>
+    <span class="badge">v1.0</span>
+  </div>
+  <div class="status">
+    <div class="status-row">
+      <div class="dot" id="statusDot"></div>
+      <span id="statusText">Active — monitoring this page</span>
+    </div>
+  </div>
+  <div class="stats">
+    <div class="stat-box">
+      <div class="num" id="blockedCount">0</div>
+      <div class="lbl">Blocked Today</div>
+    </div>
+    <div class="stat-box">
+      <div class="num" id="totalCount">0</div>
+      <div class="lbl">Total Scanned</div>
+    </div>
+  </div>
+  <div class="legend">
+    <div class="legend-title">⚠️ Risk Levels</div>
+    <div class="legend-item">
+      <span class="sev-badge sev-critical">CRITICAL</span>
+      <span class="legend-desc">API keys, private keys, SSNs — always warned</span>
+    </div>
+    <div class="legend-item">
+      <span class="sev-badge sev-high">HIGH</span>
+      <span class="legend-desc">Passports, IBANs, tokens — warned with context</span>
+    </div>
+    <div class="legend-item">
+      <span class="sev-badge sev-medium">MEDIUM</span>
+      <span class="legend-desc">IP addresses, phone numbers, addresses</span>
+    </div>
+    <div class="legend-item">
+      <span class="sev-badge sev-low">LOW</span>
+      <span class="legend-desc">Keywords — warned only with other signals</span>
+    </div>
+  </div>
+  <div class="footer">All detection runs locally — no data leaves your device.</div>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GuardPrompt — Local Test Page</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; background: #0f0f0f; color: #e0e0e0; }
+    h1 { color: #CC4A12; }
+    h2 { color: #aaa; font-size: 14px; text-transform: uppercase; letter-spacing: 0.1em; margin-top: 32px; }
+    .test-section { background: #1a1a1a; border: 1px solid #333; border-radius: 8px; padding: 16px; margin: 12px 0; }
+    textarea, div[contenteditable] { width: 100%; min-height: 80px; background: #111; border: 1px solid #444; border-radius: 6px; color: #e0e0e0; font-size: 14px; padding: 10px; box-sizing: border-box; resize: vertical; }
+    div[contenteditable] { font-family: inherit; }
+    button.send { background: #CC4A12; color: white; border: none; padding: 8px 20px; border-radius: 6px; cursor: pointer; margin-top: 8px; font-weight: 600; }
+    button.send:hover { background: #a33a0f; }
+    .hint { color: #666; font-size: 12px; margin-top: 6px; font-family: monospace; }
+    label { font-size: 13px; color: #aaa; }
+  </style>
+</head>
+<body>
+  <h1>🛡 GuardPrompt Test Page</h1>
+  <p style="color:#888">Load this page as a local file while your extension is installed. Test each section by pasting payloads or clicking Send.</p>
+
+  <!-- ChatGPT-style textarea -->
+  <h2>ChatGPT input (textarea #prompt-textarea)</h2>
+  <div class="test-section">
+    <label>Paste a secret here, or type and press Enter:</label>
+    <textarea id="prompt-textarea" placeholder="Paste an AWS key, .env file, private key, etc."></textarea>
+    <button class="send" data-testid="send-button">Send</button>
+    <div class="hint">Try: AKIAIOSFODNN7EXAMPLE — or paste a full .env file</div>
+  </div>
+
+  <!-- Claude-style contenteditable -->
+  <h2>Claude input (ProseMirror .ProseMirror)</h2>
+  <div class="test-section">
+    <label>Paste here:</label>
+    <div class="ProseMirror" contenteditable="true" style="min-height:80px; outline:none" placeholder="Paste sensitive content..."></div>
+    <button class="send" aria-label="Send message">Send</button>
+    <div class="hint">Try: postgresql://admin:password@prod.db.co:5432/app</div>
+  </div>
+
+  <!-- File upload -->
+  <h2>File upload test</h2>
+  <div class="test-section">
+    <label>Upload a .env or .pem file:</label><br><br>
+    <input type="file" accept=".env,.pem,.key,.json,.yaml,.yml,.csv,.sql">
+    <div class="hint">Try uploading a .env file — the extension will scan it</div>
+  </div>
+
+  <script>
+    // Simple send button handler — shows an alert if extension didn't block
+    document.querySelectorAll('button.send').forEach(btn => {
+      btn.addEventListener('click', () => {
+        alert('Message sent (extension did not block this)');
+      });
+    });
+  </script>
+</body>
+</html>
