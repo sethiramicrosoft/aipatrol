@@ -96,7 +96,7 @@ PII detection, privacy, data leak, sensitive data, enterprise security, copilot
 ## Chrome Web Store Listing Notes
 - One-time developer fee: $5 USD
 - Upload: guardprompt-v1.0.0.zip
-- Privacy policy URL: https://YOUR-GITHUB-USERNAME.github.io/guardprompt/privacy.html
+- Privacy policy URL: https://sethiramicrosoft.github.io/guardprompt/privacy.html
 - Review time: 1–3 business days
 
 ## Edge Add-ons Listing Notes
@@ -110,6 +110,6 @@ PII detection, privacy, data leak, sensitive data, enterprise security, copilot
 
 ## Privacy Policy URL (after GitHub Pages setup)
 ```
-https://YOUR-GITHUB-USERNAME.github.io/guardprompt/privacy.html
+https://sethiramicrosoft.github.io/guardprompt/privacy.html
 ```
-Replace YOUR-GITHUB-USERNAME with your actual GitHub username.
+Replace sethiramicrosoft with your actual GitHub username.
