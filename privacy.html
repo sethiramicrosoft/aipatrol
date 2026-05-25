@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GuardPrompt — Privacy Policy</title>
+  <title>AIPatrol — Privacy Policy</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -29,24 +29,152 @@
     }
     .contact { background: #f9f9f9; padding: 16px; border-radius: 6px; margin-top: 36px; }
     a { color: #8B1E00; }
+    table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13px; }
+    th { background: #f5f5f5; text-align: left; padding: 8px 10px; border: 1px solid #ddd; }
+    td { padding: 8px 10px; border: 1px solid #ddd; vertical-align: top; }
   </style>
 </head>
 <body>
 
-  <h1>🛡️ GuardPrompt</h1>
+  <h1>🛡️ AIPatrol</h1>
+  <h2 style="border:none; margin-top:0; padding:0; font-size:22px;">Privacy Policy</h2>
+  <p class="meta">
+    Effective date: 25 May 2025 &nbsp;·&nbsp; Last updated: 25 May 2025 &nbsp;·&nbsp;
+    URL: <a href="https://sethiramicrosoft.github.io/AIPatrol/privacy.html">https://sethiramicrosoft.github.io/AIPatrol/privacy.html</a>
+  </p>
+
+  <div class="highlight">
+    AIPatrol is designed to operate entirely on your device. The extension does not transmit the content you type or paste, and does not send analytics, telemetry, or usage data to us or any third party. Your browser vendor independently processes installation and update data under their own privacy policy.
+  </div>
+
+  <h2>1. Who We Are (Data Controller)</h2>
+  <p>AIPatrol is a browser extension developed and operated by <strong>Sudhakar Ethirajulu</strong>, an independent software developer.</p>
+  <p><strong>Contact:</strong> <a href="mailto:sethirajulu@hotmail.com">sethirajulu@hotmail.com</a><br>
+  <strong>Source code:</strong> <a href="https://github.com/sethiramicrosoft/aipatrol">github.com/sethiramicrosoft/aipatrol</a></p>
+  <p>If you are located in the European Economic Area (EEA) or United Kingdom and wish to make a formal data-subject request, please email the address above with the subject line "Privacy Request".</p>
+
+  <h2>2. Data We Do Not Transmit</h2>
+  <p>AIPatrol does not transmit to any external server:</p>
+  <ul>
+    <li>The text you type or paste into AI tools</li>
+    <li>Any detected sensitive data (API keys, passwords, personal information)</li>
+    <li>Your browsing history or the websites you visit</li>
+    <li>Your IP address or location</li>
+    <li>Your name, email address, or any identity information</li>
+    <li>Usage statistics, analytics, or telemetry of any kind</li>
+    <li>Cookies or tracking identifiers</li>
+  </ul>
+
+  <h2>3. What the Extension Processes Locally</h2>
+  <p>To provide warnings, AIPatrol accesses the text you type or paste into prompt fields on supported AI sites at the moment you attempt to submit it, solely to evaluate it locally against detection rules. This scanning is a form of data processing under applicable law, but it happens entirely in your browser's memory on your device.</p>
+  <ul>
+    <li>Scanned text is not written to persistent storage</li>
+    <li>Scanned text is not transmitted to us or any third party</li>
+    <li>AIPatrol does not contact any AIPatrol-operated server</li>
+    <li>All detection rules ship inside the published extension package — no remote code is loaded</li>
+  </ul>
+  <p>The extension also stores your <strong>local preferences</strong> (e.g., enabled/disabled state) in your browser's extension storage. This data never leaves your device and can be deleted by uninstalling the extension or clearing browser data.</p>
+  <p><strong>Legal basis (GDPR):</strong> Processing is carried out on the basis of your consent given by installing and enabling the extension (Art. 6(1)(a)) and our legitimate interest in providing the protective functionality you requested (Art. 6(1)(f)).</p>
+
+  <h2>4. Permissions Explained</h2>
+  <p>AIPatrol requests the following permissions:</p>
+  <table>
+    <tr><th>Permission</th><th>Why it is needed</th><th>What it does NOT do</th></tr>
+    <tr>
+      <td><strong>Host permissions</strong> (specific sites only)</td>
+      <td>Injects the content script that reads text input fields on supported AI sites</td>
+      <td>Does not run on any other websites. Does not read cookies, auth tokens, or response data.</td>
+    </tr>
+    <tr>
+      <td><strong>Storage</strong></td>
+      <td>Saves your local preferences (enabled/disabled state)</td>
+      <td>No sensitive data is ever written to storage</td>
+    </tr>
+    <tr>
+      <td><strong>Notifications</strong></td>
+      <td>Displays the in-page warning banner when sensitive data is detected</td>
+      <td>No notification content is transmitted anywhere</td>
+    </tr>
+  </table>
+  <p><strong>Supported sites (host permissions):</strong> chatgpt.com, chat.openai.com, claude.ai, gemini.google.com, perplexity.ai, www.perplexity.ai, copilot.microsoft.com, www.google.com, www.bing.com, you.com, poe.com, localhost. If we add new sites, we will update this policy and note the change in release notes.</p>
+
+  <h2>5. Third-Party Services</h2>
+  <p>AIPatrol itself does not send your data to any third party. However, please note:</p>
+  <ul>
+    <li><strong>Browser/extension store:</strong> The Chrome Web Store and Microsoft Edge Add-ons store may process device and download information to distribute and update the extension, under their own privacy policies.</li>
+    <li><strong>AI platforms:</strong> The AI sites you use (ChatGPT, Claude, Gemini, etc.) process your prompts under their own privacy policies. AIPatrol warns you before you send; it does not change what those platforms do with data you choose to send.</li>
+  </ul>
+
+  <h2>6. Children's Privacy</h2>
+  <p>AIPatrol is intended for general audiences and is not directed to children. We do not knowingly collect personal information from children under 13 (or under the applicable age of digital consent in your jurisdiction — 13 to 16 under GDPR Art. 8). If you believe a child has used the extension in a way that raises a concern, please contact <a href="mailto:sethirajulu@hotmail.com">sethirajulu@hotmail.com</a>.</p>
+
+  <h2>7. Data Retention</h2>
+  <p>AIPatrol does not operate servers that hold your data, so there is no server-side retention. Your local extension preferences are retained in your browser's storage until you uninstall the extension or clear browser data. Scanned text is processed in memory only and is not retained after the check completes.</p>
+
+  <h2>8. Your Privacy Rights</h2>
+  <p>Even though we do not hold personal data about you on our servers, you have the following rights under applicable laws:</p>
+  <ul>
+    <li><strong>GDPR / UK GDPR:</strong> Access, rectification, erasure, restriction, portability, objection, and the right to withdraw consent</li>
+    <li><strong>CCPA / CPRA (California):</strong> Right to know, delete, correct, opt out of sale/sharing, and non-discrimination</li>
+    <li><strong>Other US state laws:</strong> Virginia (VCDPA), Colorado (CPA), Connecticut (CTDPA), Texas (TDPSA), and other applicable state laws</li>
+  </ul>
+  <p>We do <strong>not</strong> sell or share personal information as defined under CCPA/CPRA. We do not use cross-context behavioural advertising.</p>
+  <p>To exercise any right, email <a href="mailto:sethirajulu@hotmail.com">sethirajulu@hotmail.com</a>. If you are in the EEA or UK, you also have the right to lodge a complaint with your local data protection authority (e.g., the ICO in the UK, or your national DPA in the EEA).</p>
+
+  <h2>9. Security</h2>
+  <p>We protect the integrity of the extension through:</p>
+  <ul>
+    <li>Signed packages distributed only via official browser stores</li>
+    <li>No remote code execution — all detection logic ships inside the extension package</li>
+    <li>Least-privilege permissions — only the sites listed above</li>
+    <li>No analytics, advertising, or third-party SDKs included</li>
+    <li>Open source code available for audit at <a href="https://github.com/sethiramicrosoft/aipatrol">github.com/sethiramicrosoft/aipatrol</a></li>
+  </ul>
+  <p>If you discover a security vulnerability, please report it to <a href="mailto:sethirajulu@hotmail.com">sethirajulu@hotmail.com</a>.</p>
+
+  <h2>10. Security Incidents</h2>
+  <p>If we become aware of a security incident affecting the extension — for example, an unauthorised release or supply-chain compromise — we will publish a notice in the extension's store listing and source repository, and notify supervisory authorities and individuals as required by GDPR Arts. 33–34, UK GDPR, and applicable US state breach notification laws.</p>
+
+  <h2>11. Open Source Transparency</h2>
+  <p>The full source code of AIPatrol, including its detection rules (<code>rules.json</code>) and content scripts, is published at <a href="https://github.com/sethiramicrosoft/aipatrol">github.com/sethiramicrosoft/aipatrol</a>. You can review and verify our privacy claims by examining the code directly. Detection patterns are stored in a human-readable JSON file you can inspect without any technical knowledge.</p>
+
+  <h2>12. Changes to This Policy</h2>
+  <p>If this privacy policy changes, the updated version will be published at <a href="https://sethiramicrosoft.github.io/AIPatrol/privacy.html">this URL</a> with a revised effective date and noted in the extension's release notes.</p>
+  <p>If a future version of AIPatrol would collect or transmit any personal data, we will: (i) update this policy, (ii) present an in-extension consent screen describing exactly what data would be collected and why, and (iii) leave the feature disabled by default until you affirmatively opt in.</p>
+
+  <h2>13. Known Limitations</h2>
+  <p>Microsoft Edge enforces a browser-level restriction that prevents third-party extensions from running on <strong>copilot.microsoft.com</strong>. This is a policy enforced by the Edge browser itself and is outside our control. AIPatrol cannot monitor activity on Microsoft Copilot when using the Edge browser. Users who require Copilot coverage may install AIPatrol on Google Chrome, where this restriction does not apply.</p>
+
+  <h2>14. Governing Law</h2>
+  <p>This Privacy Policy is governed by the laws of Australia, without regard to conflict of law principles. For users in the EEA or UK, applicable GDPR and UK GDPR provisions take precedence where required by law.</p>
+
+  <div class="contact">
+    <strong>Contact</strong><br><br>
+    <strong>Sudhakar Ethirajulu</strong> (Developer &amp; Data Controller)<br>
+    Email: <a href="mailto:sethirajulu@hotmail.com">sethirajulu@hotmail.com</a><br>
+    GitHub: <a href="https://github.com/sethiramicrosoft/aipatrol">github.com/sethiramicrosoft/aipatrol</a><br><br>
+    For formal data-subject requests, please email with subject: <em>"Privacy Request — AIPatrol"</em>
+  </div>
+
+</body>
+</html>
+
+<body>
+
+  <h1>🛡️ AIPatrol</h1>
   <h2 style="border:none; margin-top:0; padding:0; font-size:22px;">Privacy Policy</h2>
   <p class="meta">Effective date: 25 May 2025 &nbsp;·&nbsp; Last updated: 25 May 2025</p>
 
   <div class="highlight">
-    ✅ GuardPrompt does not collect, transmit, store, or share any of your data — ever.
+    ✅ AIPatrol does not collect, transmit, store, or share any of your data — ever.
     All processing happens entirely inside your browser, on your device.
   </div>
 
   <h2>1. Who We Are</h2>
-  <p>GuardPrompt is a browser extension that warns users before sensitive data (such as API keys, passwords, and personal information) is submitted to AI tools like ChatGPT, Claude, Gemini, and others. It is developed and maintained as an independent software product.</p>
+  <p>AIPatrol is a browser extension that warns users before sensitive data (such as API keys, passwords, and personal information) is submitted to AI tools like ChatGPT, Claude, Gemini, and others. It is developed and maintained as an independent software product.</p>
 
   <h2>2. Data We Do NOT Collect</h2>
-  <p>GuardPrompt does not collect any of the following:</p>
+  <p>AIPatrol does not collect any of the following:</p>
   <ul>
     <li>The text you type or paste into AI tools</li>
     <li>Any detected sensitive data (API keys, passwords, personal information, etc.)</li>
@@ -58,7 +186,7 @@
   </ul>
 
   <h2>3. How Detection Works (Fully Local)</h2>
-  <p>When you paste text or submit a prompt to an AI tool, GuardPrompt runs pattern matching entirely within your browser using JavaScript. The analysis:</p>
+  <p>When you paste text or submit a prompt to an AI tool, AIPatrol runs pattern matching entirely within your browser using JavaScript. The analysis:</p>
   <ul>
     <li>Never leaves your device</li>
     <li>Is never sent to any external server, API, or cloud service</li>
@@ -68,39 +196,39 @@
   <p>The extension operates entirely offline. No internet connection is required for detection to function.</p>
 
   <h2>4. Permissions Explained</h2>
-  <p>GuardPrompt requests the following browser permissions. Here is exactly why each is needed:</p>
+  <p>AIPatrol requests the following browser permissions. Here is exactly why each is needed:</p>
   <ul>
     <li><strong>Read and change data on specific websites</strong> — Required to inject the content script that monitors text input on supported AI sites (e.g., chatgpt.com, claude.ai). The extension only runs on the listed AI platforms — not on all websites.</li>
     <li><strong>Display notifications</strong> — Used to show the warning banner when sensitive data is detected. No notification content is stored or transmitted.</li>
     <li><strong>Storage</strong> — Used only to store your local settings (such as whether the extension is enabled). No sensitive data is ever written to storage.</li>
   </ul>
-  <p>GuardPrompt does NOT request permissions to read all websites, access your tabs, read your browsing history, or communicate with external servers.</p>
+  <p>AIPatrol does NOT request permissions to read all websites, access your tabs, read your browsing history, or communicate with external servers.</p>
 
   <h2>5. Third-Party Services</h2>
-  <p>GuardPrompt does not integrate with, send data to, or communicate with any third-party services, analytics platforms, advertising networks, or cloud providers. There are no third parties involved in the operation of this extension.</p>
+  <p>AIPatrol does not integrate with, send data to, or communicate with any third-party services, analytics platforms, advertising networks, or cloud providers. There are no third parties involved in the operation of this extension.</p>
 
   <h2>6. Children's Privacy</h2>
-  <p>GuardPrompt does not knowingly collect any information from anyone, including children under the age of 13. As no data is collected at all, the extension is safe for users of all ages.</p>
+  <p>AIPatrol does not knowingly collect any information from anyone, including children under the age of 13. As no data is collected at all, the extension is safe for users of all ages.</p>
 
   <h2>7. Data Retention</h2>
   <p>Because we collect no data, there is nothing to retain, delete, or export. Your local extension settings (e.g., enabled/disabled state) are stored in your browser's local storage and can be cleared at any time by uninstalling the extension or clearing browser data.</p>
 
   <h2>8. Your Rights (GDPR / CCPA)</h2>
-  <p>Since GuardPrompt collects no personal data, there is no personal data to access, correct, delete, or port. If you are located in the European Economic Area (EEA), United Kingdom, California, or any other jurisdiction with data protection laws, GuardPrompt is fully compliant by design — there is simply no data to govern.</p>
+  <p>Since AIPatrol collects no personal data, there is no personal data to access, correct, delete, or port. If you are located in the European Economic Area (EEA), United Kingdom, California, or any other jurisdiction with data protection laws, AIPatrol is fully compliant by design — there is simply no data to govern.</p>
 
   <h2>9. Open Source Transparency</h2>
-  <p>GuardPrompt's detection rules and logic are available for inspection. The patterns used to detect sensitive data are bundled with the extension in a human-readable <code>rules.json</code> file. You can inspect exactly what the extension scans for by viewing the extension's source files in your browser.</p>
+  <p>AIPatrol's detection rules and logic are available for inspection. The patterns used to detect sensitive data are bundled with the extension in a human-readable <code>rules.json</code> file. You can inspect exactly what the extension scans for by viewing the extension's source files in your browser.</p>
 
   <h2>10. Changes to This Policy</h2>
   <p>If this privacy policy changes, the updated version will be published at this URL with a revised effective date. Any future version that begins collecting data will require explicit user consent and will be clearly communicated before taking effect.</p>
 
   <h2>11. Known Limitations</h2>
-  <p>Microsoft Edge restricts third-party browser extensions from running on Microsoft-owned websites, including <strong>copilot.microsoft.com</strong>. This is a browser-enforced policy outside our control. GuardPrompt cannot monitor activity on Copilot when using Microsoft Edge. For full Copilot coverage, users may install GuardPrompt on a Chromium-based browser such as Google Chrome or Perplexity Comet.</p>
+  <p>Microsoft Edge restricts third-party browser extensions from running on Microsoft-owned websites, including <strong>copilot.microsoft.com</strong>. This is a browser-enforced policy outside our control. AIPatrol cannot monitor activity on Copilot when using Microsoft Edge. For full Copilot coverage, users may install AIPatrol on a Chromium-based browser such as Google Chrome or Perplexity Comet.</p>
 
   <div class="contact">
     <strong>Contact</strong><br>
     If you have any questions about this privacy policy, please open an issue on our
-    <a href="https://github.com/sethiramicrosoft/guardprompt">GitHub repository</a>
+    <a href="https://github.com/sethiramicrosoft/aipatrol">GitHub repository</a>
     or contact us at <a href="mailto:sethiramicrosoft@github.com">sethiramicrosoft@github.com</a>.
   </div>
 

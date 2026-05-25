@@ -1,4 +1,4 @@
-# GuardPrompt — Store Listing Copy
+# AIPatrol — Store Listing Copy
 
 ---
 
@@ -12,9 +12,9 @@ Warns you before sensitive data — API keys, passwords, PII — is sent to Chat
 ## Full Description
 
 ```
-🛡️ GuardPrompt — AI Data Leak Prevention
+🛡️ AIPatrol — AI Data Leak Prevention
 
-Every time you paste code into ChatGPT or ask Claude to fix a bug, you risk exposing API keys, passwords, customer data, or confidential documents. GuardPrompt watches silently and warns you the moment it detects something sensitive — before it reaches the AI.
+Every time you paste code into ChatGPT or ask Claude to fix a bug, you risk exposing API keys, passwords, customer data, or confidential documents. AIPatrol watches silently and warns you the moment it detects something sensitive — before it reaches the AI.
 
 You stay in control. No hard blocks. Just a warning banner that lets you decide: dismiss it or send anyway.
 
@@ -60,13 +60,13 @@ You stay in control. No hard blocks. Just a warning banner that lets you decide:
 ✅ You.com, Poe, and more
 
 * Note: Microsoft Edge restricts third-party extensions on copilot.microsoft.com by default.
-  For full Copilot coverage, use GuardPrompt on Google Chrome.
+  For full Copilot coverage, use AIPatrol on Google Chrome.
 
 ─────────────────────────────────────
 ⚙️ HOW IT WORKS
 ─────────────────────────────────────
 1. You paste or type text into any supported AI tool
-2. GuardPrompt instantly scans it using local pattern matching
+2. AIPatrol instantly scans it using local pattern matching
 3. If sensitive data is found, a warning banner appears
 4. You choose: Send Anyway or Dismiss
 
@@ -75,7 +75,7 @@ That's it. No friction, no accounts, no data leaving your machine.
 ─────────────────────────────────────
 🏢 FOR TEAMS & ENTERPRISES
 ─────────────────────────────────────
-GuardPrompt uses a simple JSON rules file — security teams can add custom patterns for internal project codenames, proprietary identifiers, or industry-specific data formats without writing code.
+AIPatrol uses a simple JSON rules file — security teams can add custom patterns for internal project codenames, proprietary identifiers, or industry-specific data formats without writing code.
 ```
 
 ---
@@ -95,8 +95,8 @@ PII detection, privacy, data leak, sensitive data, enterprise security, copilot
 
 ## Chrome Web Store Listing Notes
 - One-time developer fee: $5 USD
-- Upload: guardprompt-v1.0.0.zip
-- Privacy policy URL: https://sethiramicrosoft.github.io/guardprompt/privacy.html
+- Upload: AIPatrol-v1.0.0.zip
+- Privacy policy URL: https://sethiramicrosoft.github.io/AIPatrol/privacy.html
 - Review time: 1–3 business days
 
 ## Edge Add-ons Listing Notes
@@ -110,6 +110,6 @@ PII detection, privacy, data leak, sensitive data, enterprise security, copilot
 
 ## Privacy Policy URL (after GitHub Pages setup)
 ```
-https://sethiramicrosoft.github.io/guardprompt/privacy.html
+https://sethiramicrosoft.github.io/AIPatrol/privacy.html
 ```
 Replace sethiramicrosoft with your actual GitHub username.

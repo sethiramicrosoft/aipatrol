@@ -1,6 +1,6 @@
 import type { DetectionResult } from '../detection/rules.js';
 
-const BANNER_ID = 'guardprompt-warning-banner';
+const BANNER_ID = 'AIPatrol-warning-banner';
 
 const RULE_LABELS: Record<string, string> = {
   aws_access_key:       'AWS Access Key',
@@ -28,7 +28,7 @@ export function showWarningBanner(
     .join(', ');
 
   const accentColor = '#E67E22';
-  const headline = 'GuardPrompt detected sensitive data';
+  const headline = 'AIPatrol detected sensitive data';
 
   const banner = document.createElement('div');
   banner.id = BANNER_ID;
@@ -48,12 +48,12 @@ export function showWarningBanner(
     font-size: 14px;
     color: #f0f0f0;
     line-height: 1.5;
-    animation: guardprompt-slide-in 0.2s ease-out;
+    animation: AIPatrol-slide-in 0.2s ease-out;
   `;
 
   banner.innerHTML = `
     <style>
-      @keyframes guardprompt-slide-in {
+      @keyframes AIPatrol-slide-in {
         from { transform: translateX(20px); opacity: 0; }
         to   { transform: translateX(0);   opacity: 1; }
       }

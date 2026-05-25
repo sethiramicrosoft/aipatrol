@@ -4,7 +4,7 @@
  */
 
 chrome.runtime.onInstalled.addListener(() => {
-  console.log('GuardPrompt installed. Protecting your prompts.');
+  console.log('AIPatrol installed. Protecting your prompts.');
   // Initialise default settings
   chrome.storage.local.set({
     enabled: true,

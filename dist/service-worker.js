@@ -7,7 +7,7 @@ var __commonJS = (cb, mod) => function __require() {
 var require_service_worker = __commonJS({
   "src/service-worker.ts"() {
     chrome.runtime.onInstalled.addListener(() => {
-      console.log("GuardPrompt installed. Protecting your prompts.");
+      console.log("AIPatrol installed. Protecting your prompts.");
       chrome.storage.local.set({
         enabled: true,
         eventLog: [],

@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "_schema": {
-    "description": "GuardPrompt detection rules. Add a new rule by copying any entry and filling in the fields below.",
+    "description": "AIPatrol detection rules. Add a new rule by copying any entry and filling in the fields below.",
     "fields": {
       "id": "Unique identifier for this rule (no spaces, use underscores)",
       "pattern": "Regular expression to match sensitive data. Use \\\\ for backslash.",

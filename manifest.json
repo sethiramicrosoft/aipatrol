@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "GuardPrompt",
+  "name": "AIPatrol",
   "version": "1.0.0",
   "description": "Protect sensitive data before it reaches AI tools. Detects API keys, credentials, PII and more.",
 

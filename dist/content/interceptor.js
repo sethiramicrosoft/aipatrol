@@ -15,7 +15,7 @@
       rules_default = {
         version: "1.0.0",
         _schema: {
-          description: "GuardPrompt detection rules. Add a new rule by copying any entry and filling in the fields below.",
+          description: "AIPatrol detection rules. Add a new rule by copying any entry and filling in the fields below.",
           fields: {
             id: "Unique identifier for this rule (no spaces, use underscores)",
             pattern: "Regular expression to match sensitive data. Use \\\\ for backslash.",
@@ -459,7 +459,7 @@
     removeWarningBanner();
     const detectedTypes = result.matches.map((m) => RULE_LABELS[m.ruleType] ?? m.ruleType).join(", ");
     const accentColor = "#E67E22";
-    const headline = "GuardPrompt detected sensitive data";
+    const headline = "AIPatrol detected sensitive data";
     const banner = document.createElement("div");
     banner.id = BANNER_ID;
     banner.setAttribute("role", "alert");
@@ -478,11 +478,11 @@
     font-size: 14px;
     color: #f0f0f0;
     line-height: 1.5;
-    animation: guardprompt-slide-in 0.2s ease-out;
+    animation: AIPatrol-slide-in 0.2s ease-out;
   `;
     banner.innerHTML = `
     <style>
-      @keyframes guardprompt-slide-in {
+      @keyframes AIPatrol-slide-in {
         from { transform: translateX(20px); opacity: 0; }
         to   { transform: translateX(0);   opacity: 1; }
       }
@@ -537,7 +537,7 @@
   var init_banner = __esm({
     "src/content/banner.ts"() {
       "use strict";
-      BANNER_ID = "guardprompt-warning-banner";
+      BANNER_ID = "AIPatrol-warning-banner";
       RULE_LABELS = {
         aws_access_key: "AWS Access Key",
         github_token: "GitHub Token",

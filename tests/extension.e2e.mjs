@@ -26,7 +26,7 @@ async function pasteAndExpectBanner(page, text, timeoutMs = 6000) {
   await page.click('body');
   await page.evaluate((t) => navigator.clipboard.writeText(t), text);
   await page.keyboard.press('Control+V');
-  await expect(page.locator('#guardprompt-warning-banner')).toBeVisible({ timeout: timeoutMs });
+  await expect(page.locator('#AIPatrol-warning-banner')).toBeVisible({ timeout: timeoutMs });
 }
 
 const PLATFORMS = [
@@ -54,8 +54,8 @@ for (const platform of PLATFORMS) {
       await pasteAndExpectBanner(page, payload.text);
 
       // Also verify "Send anyway" dismisses the banner
-      await page.locator('#guardprompt-warning-banner button#gp-send-anyway').click();
-      await expect(page.locator('#guardprompt-warning-banner')).toBeHidden({ timeout: 3000 });
+      await page.locator('#AIPatrol-warning-banner button#gp-send-anyway').click();
+      await expect(page.locator('#AIPatrol-warning-banner')).toBeHidden({ timeout: 3000 });
 
       await context.close();
     });

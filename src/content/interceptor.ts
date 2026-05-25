@@ -1,5 +1,5 @@
 /**
- * GuardPrompt — Content Script
+ * AIPatrol — Content Script
  *
  * Runs on GenAI sites. Intercepts paste events, keyboard submit, and button
  * clicks to scan input text before it reaches the AI model.
